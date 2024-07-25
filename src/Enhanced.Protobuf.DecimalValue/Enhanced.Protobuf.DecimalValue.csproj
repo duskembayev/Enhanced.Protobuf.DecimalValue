@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.27.2" />
+    <PackageReference Include="Grpc.Tools" Version="2.65.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="DecimalValue.proto" GrpcServices="None"/>
+  </ItemGroup>
+
+  <ItemGroup Label="Pack">
+    <None Include="DecimalValue.proto" Pack="true" PackagePath="protos\enhanced\protobuf"/>
+    <None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive"/>
+  </ItemGroup>
+
+</Project>

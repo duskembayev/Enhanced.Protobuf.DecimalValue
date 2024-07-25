@@ -1,0 +1,26 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>Enhanced.Protobuf</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>duskembayev</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Provides protobuf message definition to represent the `decimal` type.</Description>
+    <RepositoryUrl>https://github.com/duskembayev/Enhanced.Protobuf.DecimalValue</RepositoryUrl>
+    <PackageTags>DecimalValue, decimal, protobuf, grpc, proto</PackageTags>
+    <PackageIcon>icons/icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)images\icon.png" Pack="true" PackagePath="icons"/>
+    <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+</Project>

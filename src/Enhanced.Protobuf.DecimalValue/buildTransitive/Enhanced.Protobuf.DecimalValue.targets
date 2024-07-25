@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_Protobuf_DecimalValue_ProtosPath>$(MSBuildThisFileDirectory)../protos/</_Protobuf_DecimalValue_ProtosPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(ProtoIncludeDecimalValue)' == 'true'">
+    <Protobuf_StandardImportsPath>$(Protobuf_StandardImportsPath);$(_Protobuf_DecimalValue_ProtosPath)</Protobuf_StandardImportsPath>
+  </PropertyGroup>
+</Project>
